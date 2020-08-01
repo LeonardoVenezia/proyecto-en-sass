@@ -1,0 +1,12 @@
+$fondo: linear-gradient(to right, #8360c3, #2ebf91);
+
+$primaryFont: Georgia;
+$secondaryFont: Helvetica;
+
+$primaryColor: #8360c3;
+$secondaryColor: #2ebf91;
+
+%titulo {
+    font-size: 1.8em;
+    font-family: $primaryFont;
+}

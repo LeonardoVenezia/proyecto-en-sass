@@ -1,0 +1,27 @@
+@media (min-width: 600px) {
+    .header {
+        .menu {
+            display: flex;
+            align-items: center;
+            .lista {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                list-style: none;
+                li {
+                    margin-left: 16px;
+                }
+            }
+        }
+        .hamburguesa {
+            display: none;
+        }
+    }
+    .seccionProductos {
+        justify-content: space-between;
+        .producto {
+            width: 28%;
+            height: 300px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@media (min-width: 600px) {
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .menu .lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    list-style: none;
+  }
+  .header .menu .lista li {
+    margin-left: 16px;
+  }
+  .header .hamburguesa {
+    display: none;
+  }
+  .seccionProductos {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .seccionProductos .producto {
+    width: 28%;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=mediaQueries.css.map */

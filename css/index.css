@@ -1,0 +1,111 @@
+.seccionProductos .producto .titulo {
+  font-size: 1.8em;
+  font-family: Georgia;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .logo {
+  height: 100px;
+}
+
+.header .menu {
+  display: none;
+}
+
+.seccionProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.seccionProductos .producto {
+  height: 200px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8360c3), to(#2ebf91));
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  margin-top: 16px;
+}
+
+.seccionProductos .producto .titulo:hover {
+  color: #2ebf91;
+}
+
+.seccionProductos .producto_parrafo {
+  font-family: Helvetica;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid #8360c3;
+  border-radius: 5px;
+  background-color: white;
+  color: #8360c3;
+}
+
+.btn:hover {
+  background-color: #8360c3;
+  color: white;
+}
+
+.btn.btn-secondary {
+  color: #2ebf91;
+  border-color: #2ebf91;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #2ebf91;
+  color: white;
+}
+
+.btn_clase {
+  color: red;
+}
+
+@media (min-width: 600px) {
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .menu .lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    list-style: none;
+  }
+  .header .menu .lista li {
+    margin-left: 16px;
+  }
+  .header .hamburguesa {
+    display: none;
+  }
+  .seccionProductos {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .seccionProductos .producto {
+    width: 28%;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

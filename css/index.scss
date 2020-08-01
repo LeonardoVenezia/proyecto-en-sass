@@ -1,0 +1,67 @@
+@import '../styles/utils.scss';
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        height: 100px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+.seccionProductos {
+    display: flex;
+    flex-wrap: wrap;
+    .producto {
+        height: 200px;
+        width: 100%;
+        background-image: $fondo;
+        margin-top: 16px;
+        .titulo {
+            @extend %titulo;
+            &:hover{
+                color: $secondaryColor;
+            }
+        }
+        &_parrafo {
+            font-family: $secondaryFont;
+        }
+    }
+}
+
+%botones {
+    padding: 8px 16px;
+    border: 1px solid $primaryColor;
+    border-radius: 5px;
+    background-color: white;
+    color: $primaryColor;
+    &:hover {
+        background-color: $primaryColor;
+        color: white;
+    }
+}
+
+.btn {
+    @extend %botones;
+    &.btn-secondary {
+        color: $secondaryColor;
+        border-color: $secondaryColor;
+        &:hover {
+            background-color: $secondaryColor;
+            color: white;
+        }
+    }
+    &_clase {
+        color:red;
+    }
+}
+
+@import '../styles/mediaQueries.scss';
+
+// .btn.btn-secondary:hover {
+//     background-color: $secondaryColor;
+//     color: white;
+// }

@@ -1,0 +1,8 @@
+.onlyDesktop {
+    display: none;
+}
+@media(min-width:600px) {
+    .onlyDesktop {
+        display: block;
+    }
+}
